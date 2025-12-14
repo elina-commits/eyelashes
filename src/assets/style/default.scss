@@ -1,0 +1,31 @@
+@use "@/assets/style/variables" as *;
+
+*
+{
+  font-family: 'OpenSans-Regular';
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+h2, h3
+{
+  font-family: 'OpenSans-Bold';
+}
+.container
+{
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+.g-flex
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a { text-decoration: none; }
+li { list-style-type: none; }

@@ -1,0 +1,24 @@
+.scrollBtn 
+{
+  position: fixed; 
+  bottom: 30px;   
+  right: 20px;    
+  z-index: 1000;   
+  background-color: #fff;
+  border: 1px solid #325d4d;
+  border-radius: 50%;
+  color: #325d4d;
+  width: 50px;
+  height: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.6;
+  transition: .3s;
+
+  &:hover 
+  {
+    color: #fff;
+    background-color: #325d4d;
+  }
+}

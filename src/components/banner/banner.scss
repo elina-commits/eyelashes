@@ -1,0 +1,159 @@
+.banner
+{
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	background-color: #3d6e5d;	
+	box-shadow: 0 -95px 178px -67px #7affbf inset;
+}
+.banner__wrapper
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.banner__title
+{
+	color: #fff;
+	font-size: 55px;
+	max-width: 700px;
+	line-height: 60px;
+	margin-bottom: 25px;
+}
+.banner__subTitle
+{
+	color: #fff;
+	font-size: 19px;
+	max-width: 700px;
+	margin-bottom: 18px;
+}
+.banner__buy
+{
+  font-family: 'OpenSans-Bold';
+	font-size: 18px;
+	padding: 14px 38px;
+	border-radius: 10px;
+	border: 0;
+	background-color: #7affbf;
+	color: #0c7751;
+	cursor: pointer;
+	transition: .4s;
+
+	&:hover
+	{
+		background-color: #fff;
+		color: #000;
+		box-shadow: none;
+	}
+}
+.banner__wrapper-img { position: relative; }
+.banner__img
+{
+	width: 400px;
+	max-width: 100%;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+
+.banner__star,
+.banner__star2 
+{
+  position: absolute;
+  top: -10px;
+  right: -18px;    
+  width: 60px;
+  height: 80px;
+  background: #fff;
+  border-radius: 50%;
+  clip-path: polygon( 50% 0%, 65% 35%, 100% 50%, 65% 65%, 50% 100%, 35% 65%, 0% 50%, 35% 35%);
+}
+.banner__star2
+{
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	left: -10px;
+  left: -7px;
+  top: 334px;
+}
+.banner__title-mob {display: none;}
+@media( max-width: 1280px)
+{
+	.banner__title
+	{
+		font-size: 48px;
+		line-height: 50px;
+	}
+	.banner__subTitle
+	{
+		font-size: 17px;
+		max-width: 515px;
+		line-height: 25px;
+	}
+}
+@media( max-width: 1024px)
+{
+	.banner
+	{
+		height: 420px;
+
+		.banner__star
+		{
+			top: -5px;
+	    right: 10px;
+	    width: 32px;
+	    height: 42px;
+		}
+		.banner__star2
+		{
+			width: 20px;
+    	height: 26px;
+    	left: 7px;
+    	top: 276px;
+		}
+	}
+}
+@media (max-width: 968px)
+{
+	.banner { height: 100%; }
+	.banner__wrapper { gap: 20px; }
+	.banner__title 
+	{
+    font-size: 38px;
+    line-height: 40px;
+  }
+  .banner__subTitle 
+  {
+    font-size: 14px;
+    max-width: 463px;
+	    line-height: 20px;
+  }
+  .banner__buy
+  {
+  	font-size: 16px;
+  	padding: 10px 29px;
+  }
+  .banner__star2 {display: none;}
+}
+@media (max-width: 768px)
+{
+	.banner__title {display: none;}
+	.banner__wrapper
+	{	
+		text-align: center;
+		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+	.banner__title-mob
+	{
+		display: inline-block;
+		color: #fff;
+		font-size: 33px;
+		margin: 0 auto;
+		line-height: 40px;
+		max-width: 600px;
+	}
+  .banner__subTitle { max-width: 100%; }
+	.banner__img { width: 290px; }
+}
