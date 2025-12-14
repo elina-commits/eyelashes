@@ -7,7 +7,6 @@
 	margin: 0 auto;
 	position: relative;
 }
-
 .works__title
 {
 	font-size: 40px;
@@ -42,7 +41,6 @@
 	height: 400px;
 	flex-shrink: 0;
 }
-
 .works__fullscreen 
 {
 	position: fixed;
@@ -55,22 +53,18 @@
 	align-items: center;
 	justify-content: center;
 	transition: .4s;
-	background-color: #0000007a;
-	padding: 0 40px;
+	background-color: #0000008c;
+	padding: 5px 15px;
 }
 .works__fullscreen-img
 {
-	height: 100%;
+	max-width: 900px;
+	width: 100%;
+	height: auto;
 	position: relative;
 	background-color: #fff;
 }
 @media( max-width: 1024px)
 {
 	.works__image { height: 300px; }
-	.works__fullscreen-img
-	{
-		max-width: 900px;
-		width: 100%;
-		height: auto;
-	}
 }

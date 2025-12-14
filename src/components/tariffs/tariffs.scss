@@ -81,15 +81,13 @@
 {
 	.tariffs__item
 	{
-		border-radius: 60px;
-		padding: 12px 10px 30px 10px;
+		border-radius: 30px;
+		padding: 15px 10px 30px 10px;
 	}
-	.tariffs__item-title
-	{
-		font-size: 28px;
-	}
-	.tariffs__item-price
-	{
-		margin-bottom: 0;
-	}
+	.tariffs__item-title { font-size: 26px; }
+	.tariffs__item-price { margin-bottom: 0; }
+}
+@media( max-width: 400px)
+{
+	.tariffs__item-text { font-size: 16px; }
 }

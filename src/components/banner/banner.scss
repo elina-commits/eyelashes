@@ -157,3 +157,17 @@
   .banner__subTitle { max-width: 100%; }
 	.banner__img { width: 290px; }
 }
+@media (max-width: 768px)
+{
+	.banner__wrapper { gap: 10px; }
+	.banner__title-mob { max-width: 500px; }	
+	.banner__subTitle { font-size: 16px; }
+}
+@media (max-width: 400px)
+{
+	.banner__title-mob
+	{
+		font-size: 30px;
+		line-height: 40px;
+	}
+}
