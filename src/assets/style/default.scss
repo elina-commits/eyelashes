@@ -31,6 +31,7 @@ a { text-decoration: none; }
 li { list-style-type: none; }
 
 html {
+  scroll-padding-top: 60px; 
   scroll-behavior: smooth;
 }
 
@@ -46,5 +47,5 @@ html {
   view-timeline-axis: block;
   animation: reveal both;
   animation-timeline: --revealing-section;
-  animation-range: entry 0% contain 10%;
+  animation-range: entry 0% contain 50%;
 }
