@@ -1,7 +1,7 @@
 <template>
 	<section class="mainFooter" id="footer">
 		<div class="mainHeader__logo op-animation">
-			<img src="@/assets/images/eyelashes-logo.png" alt="Лого" width="140">
+			<img src="@/assets/images/eyelashes-logo2.png" alt="Лого" width="200">
 		</div>
 		<div class="container mainFooter__wrapper">
 			<div class="mainHeader__items mainFooter__items">
@@ -22,7 +22,7 @@
 					<p class="mainHeader__rights">© все права защищены.</p>
 				</div>
 				<div class="mainHeader__mob g-flex">
-					<img class="mainHeader__logo-mob" src="@/assets/images/eyelashes-logo.png" alt="Лого" width="140">
+					<img class="mainHeader__logo-mob" src="@/assets/images/eyelashes-logo.jpg" alt="Лого" width="140">
 					<p class="mainHeader__rights-mob">© все права защищены.</p>
 				</div>
 			</div>

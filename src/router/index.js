@@ -5,7 +5,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('../views/index.vue'),
-    meta: { breadcrumb: 'Главная' }
+  },
+  {
+    path: '/payment',
+    name: 'Payment',
+    component: () => import('../views/paymentPage.vue'),
   }
 ];
 

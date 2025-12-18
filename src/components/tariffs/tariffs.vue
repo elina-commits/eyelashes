@@ -1,5 +1,5 @@
 <template>
-	<section class="tariffs" id="tariffs">
+	<section class="tariffs" id="tariffs" >
 		<div class="tariffs__wrapper container">
 			<h2 class="tariffs__title">Тарифы</h2>
 			<p class="tariffs__subTitle">Сертификат выдаётся после прохождения курса. Рассрочка доступна.</p>
@@ -8,7 +8,7 @@
 					<h3 class="tariffs__item-title">{{ tariff.title }}</h3>
 					<h3 class="tariffs__item-price">{{ tariff.price }}</h3>
 					<p class="tariffs__item-text">{{ tariff.text }}</p>
-					<a class="tariffs__item-buy" :href="tariff.link">Купить</a>
+					<router-link class="tariffs__item-buy" :to="tariff.link">Купить</router-link>
 				</div>
 			</div>
 		</div>

@@ -1,5 +1,5 @@
 {
-  "name": "vue-snikers",
+  "name": "eyelashes",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^8.5.3",
     "pinia": "^3.0.4",
     "sass": "^1.93.3",
     "sass-loader": "^16.0.6",
@@ -22,5 +23,8 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "vite": "^7.1.7",
     "vite-plugin-vue-devtools": "^8.0.2"
+  },
+  "overrides": {
+    "esbuild": "0.24.2"
   }
 }
