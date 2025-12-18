@@ -21,6 +21,12 @@
 }
 @keyframes fall 
 {
-  0% { transform: translateY(0) rotate(0deg); }
-  100% { transform: translateY(110vh) rotate(360deg); }
+  from {
+    /* Начинаем от той точки top, которую задали в JS */
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    /* Пролетаем ровно на высоту экрана + запас, чтобы скрыться внизу */
+    transform: translateY(110vh) rotate(360deg);
+  }
 }
