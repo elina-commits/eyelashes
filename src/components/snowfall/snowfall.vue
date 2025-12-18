@@ -24,14 +24,14 @@ const flakes = ref([]);
 
 onMounted(() => 
 {
-  for (let i = 0; i < 35; i++) 
+  for (let i = 0; i < 50; i++) 
   {
     flakes.value.push({
       id: i,
       left: Math.random() * 100,
       duration: Math.random() * 3 + 4,
       delay: Math.random() * 5,    
-      size: Math.random() * 15 + 8,
+      size: Math.random() * 15 + 2,
       image: '/eyelashes-snowflake.svg',
       op: Math.random() * 1 + 0.1,
     });

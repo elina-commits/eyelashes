@@ -22,11 +22,9 @@
 @keyframes fall 
 {
   from {
-    /* Начинаем от той точки top, которую задали в JS */
     transform: translateY(0) rotate(0deg);
   }
   to {
-    /* Пролетаем ровно на высоту экрана + запас, чтобы скрыться внизу */
     transform: translateY(110vh) rotate(360deg);
   }
 }

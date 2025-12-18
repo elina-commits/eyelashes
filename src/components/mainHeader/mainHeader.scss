@@ -25,7 +25,11 @@
 	align-items: normal;
 	gap: 30px;
 }
-.mainHeader__logo { display: flex; }
+.mainHeader__logo 
+{
+	position: relative;
+	right: 20px;
+}
 
 .mainHeader__items { gap: 30px; }
 .mainHeader__item
