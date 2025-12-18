@@ -1,0 +1,26 @@
+.snow__wrapper 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99999;
+  overflow: hidden;
+  background: transparent;
+}
+.snowflake 
+{
+  position: absolute;
+  top: -10%;
+  background-size: contain;
+  filter: brightness(0) invert(1); 
+  will-change: transform;
+  animation: fall linear infinite;
+}
+@keyframes fall 
+{
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}

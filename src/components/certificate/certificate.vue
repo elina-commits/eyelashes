@@ -5,9 +5,11 @@
 			<p class="certificate__subTitle">Сертификат получаемый после окончания курса (подтверждает квалификацию и повышает доверие клиенток) :</p>
 			<div class="certificate__images">
 				<img class="certificate__img" src="@/assets/images/eyelashes-certificate.jpg" @click="openFullscreen" alt="Фото сертификата">
-				<div class="certificate__fullscreen" v-if="fullscreenImageSrc" @click="closeFullscreen">
-          			<img :src="fullscreenImageSrc" />
-      			</div>
+				<Teleport to="body">
+					<div class="certificate__fullscreen" v-if="fullscreenImageSrc" @click="closeFullscreen">
+	          			<img :src="fullscreenImageSrc" />
+	      			</div>
+      			</Teleport>
 			</div>
 	  </div>
 	</section>

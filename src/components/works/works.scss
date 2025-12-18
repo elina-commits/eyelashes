@@ -1,4 +1,4 @@
-.works { padding: 30px 0 30px 0; }
+.works { padding: 70px 0 30px 0; }
 
 .works__titleWr
 {
@@ -48,7 +48,7 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 30;
+	z-index: 300000;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -58,7 +58,7 @@
 }
 .works__fullscreen-img
 {
-	max-width: 900px;
+	max-width: 800px;
 	width: 100%;
 	height: auto;
 	position: relative;

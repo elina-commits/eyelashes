@@ -3,7 +3,8 @@
 		<div class="paymentPage__wrapper">
 			<div class="paymentPage__left">
 				<router-link class="paymentPage__logo" to="/">
-					<img src="@/assets/images/eyelashes-whiteLogo.png" alt="Лого">
+					<img class="paymentPage__logo-img1" src="@/assets/svg/eyelashes-arrowLeft.svg" alt="Назад">
+					<img class="paymentPage__logo-img2" src="@/assets/images/eyelashes-whiteLogo.png" alt="Лого">
 				</router-link>
 				<h2 class="paymentPage__title">
 					ОСВОЙТЕ КОРЕЙСКУЮ ТЕХНИКУ ЛАМИНИРОВАНИЯ РЕСНИЦ ОНЛАЙН

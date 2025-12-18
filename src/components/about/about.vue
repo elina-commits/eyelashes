@@ -1,5 +1,5 @@
 <template>
-	<section class="about" id="about">
+	<section class="about" id="about" ref="targetSection" :class="{ 'show': isVisible }">
 		<div class="container">
 			<h2 class="about__title">Обо мне</h2>
 			<div class="about__wrapper">
@@ -17,6 +17,32 @@
 		</div>
 	</section>
 </template>
+
+<script setup>
+	import { ref, onMounted } from 'vue'
+
+	const targetSection = ref(null)
+	const isVisible = ref(false)
+
+	onMounted(() => {
+	  const observer = new IntersectionObserver((entries) => {
+	    entries.forEach(entry => {
+	      // Если секция вошла в область видимости хотя бы на 20%
+	      if (entry.isIntersecting) {
+	        isVisible.value = true
+	        // Если нужно, чтобы анимация сработала только один раз — отключаем слежку
+	        observer.unobserve(entry.target)
+	      }
+	    })
+	  }, {
+	    threshold: 0.2 // 20% секции должно быть видно для старта
+	  })
+
+	  if (targetSection.value) {
+	    observer.observe(targetSection.value)
+	  }
+	})
+</script>
 
 <style lang="scss" scoped>
 	@use "about.scss"

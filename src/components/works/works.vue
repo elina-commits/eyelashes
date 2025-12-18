@@ -9,9 +9,12 @@
 			    		@click="openFullscreen(image.src)"
 			    	/>
 			  	</div>
-				<div class="works__fullscreen" v-if="fullscreenImageSrc" @click="closeFullscreen">
-					<img :src="fullscreenImageSrc" class="works__fullscreen-img" />
-			  	</div>
+				<Teleport to="body">
+			    	<div 
+			        v-if="fullscreenImageSrc" class="works__fullscreen" @click="closeFullscreen">
+			        	<img :src="fullscreenImageSrc" class="works__fullscreen-img" />
+			      </div>
+			    </Teleport>
 			</div>
 	  	</div>
 	</section>

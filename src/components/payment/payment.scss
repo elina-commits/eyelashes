@@ -27,11 +27,16 @@
 }
 .paymentPage__logo
 {
+	display: flex;
+	gap: 5px;
 	position: absolute;
 	top: 20px;
 	margin-bottom: 20px;
+	opacity: .8;
+	transition: .3s;
+	&:hover { opacity: 1; }
 
-	img {width: 110px;}
+	.paymentPage__logo-img2  { width: 105px; }
 }
 .paymentPage__title
 {
@@ -47,6 +52,7 @@
 .paymentPage__left-total
 {
 	h3 { font-size: 25px; }
+
 	.paymentPage__price
 	{
 		display: inline-block;
@@ -106,7 +112,7 @@ input
 	background-color: transparent;
 	width: 100%;
 	outline: none;
-	padding-bottom: 4px;
+	padding-bottom: 3px;
 
 	&::placeholder
 	{
@@ -197,6 +203,7 @@ input
 	{
 		position: relative;
 		margin: 0 auto;
+		right: 20px;
 		margin-bottom: 30px;
 	}
 	.paymentPage__title
@@ -215,5 +222,23 @@ input
 }
 @media( max-width: 768px)
 {
-	.payment__form-subTitle { font-size: 29px; }
+	.payment__form-subTitle { font-size: 25px; }
+}
+@media( max-width: 450px)
+{
+	.paymentPage__title { font-size: 23px; }
+	.paymentPage__left-total .paymentPage__price, .card__inputs { margin-bottom: 0px; }
+
+	.paymentPage__plus
+	{
+		width: 30px;
+		height: 37px;
+	}
+	.payment__form-subTitle, .card__input-title { margin-bottom: 7px; }
+	.payment__warning
+	{
+		font-size: 17px;
+		margin-bottom: 15px;
+	}
+	.paymentPage__left-total p { font-size: 18px; }
 }

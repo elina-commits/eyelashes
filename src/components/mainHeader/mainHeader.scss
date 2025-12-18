@@ -1,9 +1,15 @@
 .mainHeader
 {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
 	background-color: #fff;
+    background-color: #fffd;
+    backdrop-filter: blur(10px);
+
 	.container
 	{
-		height: 80px;
+		height: 75px;
 		display: flex;
 		align-items: center;
 	}
@@ -11,7 +17,7 @@
 .mainHeader__wrapper
 {
 	display: flex;
-	gap: 18px;
+	gap: 30px;
 }
 .mainHeader__wrap
 {
@@ -35,7 +41,7 @@
 	    width: 0;
 	    height: 2px;
 	    background-color: #42ac86;
-	    bottom: 0;
+	    bottom: -5px;
 	    transition: 0.3s;
 	    border-radius: 40px;
 	}

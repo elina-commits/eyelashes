@@ -3,7 +3,7 @@
 		<div class="container g-flex">
 			<div class="mainHeader__wrapper">
 				<div class="mainHeader__logo">
-					<img src="@/assets/images/eyelashes-logo2.png" alt="Лого" width="145">
+					<img src="@/assets/images/eyelashes-logo2.png" alt="Лого" width="135">
 				</div>
 				<div class="mainHeader__items g-flex">
 					<div class="mainHeader__item" @click="scrollToSection(item.id)" v-for="item in object.items">{{ item.name }}</div>
@@ -50,7 +50,7 @@
 	import { useMainDataStore } from '@/store/mainData.js'
 
 	const object = useMainDataStore()
-	
+
 	const isShow = ref(false)
 	const showBurger = () => { isShow.value = !isShow.value }
 

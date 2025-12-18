@@ -1,5 +1,5 @@
 <template>
-	<section class="why" id="why">
+	<section class="why">
 		<div class="why__wrapper container">
 			<h2 class="why__title">Почему это обучение именно для вас?</h2>
 			<div class="why__cards g-flex">
