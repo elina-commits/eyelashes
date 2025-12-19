@@ -5,7 +5,8 @@
 			<p class="tariffs__subTitle">Сертификат выдаётся после прохождения курса. Рассрочка доступна.</p>
 			<div class="tariffs__items">
 				<div class="tariffs__item" v-for="tariff in object.tariffs">
-					<h3 class="tariffs__item-title">{{ tariff.title }}</h3>
+					<h2 class="tariffs__item-title">{{ tariff.title }}</h2>
+					<p class="tariffs__item-subTitle">{{ tariff.subtitle }}</p>
 					<h3 class="tariffs__item-price">{{ tariff.price }}</h3>
 					<p class="tariffs__item-text">{{ tariff.text }}</p>
 					<router-link class="tariffs__item-buy" :to="tariff.link">Купить</router-link>

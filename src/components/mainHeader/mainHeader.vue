@@ -44,7 +44,6 @@
 		</div>
 	</header>
 </template>
-
 <script setup>
 	import { ref } from "vue"
 	import { useMainDataStore } from '@/store/mainData.js'
@@ -66,7 +65,6 @@
 	  }
 	}
 </script>
-
 <style lang="scss">
 	@use "mainHeader.scss"
 </style>

@@ -8,12 +8,7 @@
     background-color: #fffd;
     backdrop-filter: blur(10px);
 
-	.container
-	{
-		height: 75px;
-		display: flex;
-		align-items: center;
-	}
+	.container { height: 75px; }
 }
 .mainHeader__wrapper
 {
@@ -143,11 +138,11 @@
 		transition: .5s;
 		position: absolute;
 		left: -100%;
-		top: 80px;
+		top: 75px;
 		width: 100%;
 		padding: 12px 20px;
 		flex-direction: column;
-		background-color: #3d6e5d;
+		background-color: #3d6e5dfc;
 		box-shadow: 0 -150px 178px -67px #7affbf inset;
 		z-index: 100;
 		border-bottom: 2px solid #fff;
@@ -177,6 +172,7 @@
 	{
 		p
 		{
+			color: #fff;
 			padding: 2px;
 			font-size: 22px;	
 		}

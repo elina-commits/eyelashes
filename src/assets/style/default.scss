@@ -40,12 +40,3 @@ html {
   from { opacity: 0; transform: translateY(50px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-.programm, .tariffs, .works, .reviews, .about, .certificate 
-{
-  view-timeline-name: --revealing-section;
-  view-timeline-axis: block;
-  animation: reveal both;
-  animation-timeline: --revealing-section;
-  animation-range: entry 0% contain 50%;
-}

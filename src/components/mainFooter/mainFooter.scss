@@ -108,3 +108,12 @@
 		gap: 10px;
 	}
 }
+
+@media( max-width: 400px)
+{	
+	.tariffs__subTitle
+	{
+		font-size: 18px;
+	}
+	.mainFooter { padding: 20px 0; }
+}

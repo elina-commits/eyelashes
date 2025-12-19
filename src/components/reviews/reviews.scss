@@ -69,3 +69,8 @@
 		width: 100%;
 	}
 }
+@media( max-width: 400px)
+{	
+	.reviews { padding: 25px 0 30px 0; }
+	.reviews__items { gap: 8px; }
+}
