@@ -3,6 +3,7 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	padding: 110px 0 30px 0;
 	background-image: url('@/assets/images/eyelashes-bg.jpg');
 	background-size: cover;
@@ -13,25 +14,28 @@
 	align-items: center;
 	justify-content: space-around;
 	box-shadow: 0 -95px 178px -67px #d4fff252 inset;
-	padding: 10px 20px;
+	padding: 10px 15px;
+	margin: 0 10px;
 	border-radius: 20px;
 	backdrop-filter: blur(40px);   
 }
-.banner__title
+.banner__title, .banner__subTitle
 {
 	color: #fff;
-	font-size: 55px;
 	max-width: 700px;
+}
+.banner__title
+{
+	font-size: 55px;
 	line-height: 60px;
 	margin-bottom: 25px;
 }
 .banner__subTitle
 {
-	color: #fff;
 	font-size: 19px;
-	max-width: 700px;
 	margin-bottom: 18px;
 }
+
 .banner__buy
 {
 	display: inline-block;
@@ -48,20 +52,18 @@
 	&:hover
 	{
 		background-color: #fff;
-		box-shadow: none;
 		scale: 105%;
 	}
 }
-.banner__wrapper-img { position: relative; }
 .banner__img
 {
 	width: 400px;
 	max-width: 100%;
-	border-radius: 50%;
+	border-radius: 50%;	
 	border: 2px solid #fff;
 }
+.banner__title-mob { display: none; }
 
-.banner__title-mob {display: none;}
 @media( max-width: 1280px)
 {
 	.banner__title
@@ -86,36 +88,35 @@
 	.banner__wrapper { gap: 20px; }
 	.banner__title 
 	{
-    font-size: 38px;
-    line-height: 40px;
+    font-size: 39px;
+    line-height: 42px;
   }
   .banner__subTitle 
   {
     font-size: 14px;
     max-width: 463px;
-	    line-height: 20px;
+	  line-height: 20px;
   }
   .banner__buy
   {
   	font-size: 16px;
-  	padding: 10px 29px;
+  	padding: 10px 30px;
   }
 }
 @media (max-width: 768px)
 {
-	.banner__title {display: none;}
+	.banner__title { display: none; }
 	.banner__wrapper
 	{	
 		text-align: center;
-		flex-direction: column;
 		flex-direction: column-reverse;
 	}
+
 	.banner__title-mob
 	{
 		display: inline-block;
 		color: #fff;
 		font-size: 33px;
-		margin: 0 auto;
 		line-height: 40px;
 		max-width: 600px;
 	}

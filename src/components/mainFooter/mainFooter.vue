@@ -1,11 +1,11 @@
 <template>
 	<section class="mainFooter" id="footer">
-		<div class="mainHeader__logo op-animation">
-			<img src="@/assets/images/eyelashes-logo2.png" alt="Лого" width="200">
+		<div class="mainFooter__logo op-animation">
+			<img src="@/assets/images/eyelashes-logo3.png" alt="Лого" width="165">
 		</div>
 		<div class="container mainFooter__wrapper">
-			<div class="mainHeader__items mainFooter__items">
-				<div class="mainHeader__item mainFooter__item" @click="scrollToSection(item.id)" v-for="item in object.items">{{ item.name }}</div>
+			<div class="mainFooter__items">
+				<div class="mainFooter__item" @click="scrollToSection(item.id)" v-for="item in object.items">{{ item.name }}</div>
 			</div>
 			<div class="g-flex mainFooter__info-wr">
 				<div class="mainFooter__info">
@@ -22,7 +22,7 @@
 					<p class="mainHeader__rights">© все права защищены.</p>
 				</div>
 				<div class="mainHeader__mob g-flex">
-					<img class="mainHeader__logo-mob" src="@/assets/images/eyelashes-logo.jpg" alt="Лого" width="140">
+					<img class="mainFooter__logo-mob" src="@/assets/images/eyelashes-logo.jpg" alt="Лого" width="140">
 					<p class="mainHeader__rights-mob">© все права защищены.</p>
 				</div>
 			</div>
@@ -48,6 +48,6 @@
 	}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	@use "mainFooter.scss"
 </style>

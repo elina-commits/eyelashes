@@ -8,37 +8,119 @@
   </head>
   <body class="fade-in-item">
     <div id="loading-screen">
-        Загрузка сайта...
+        <div class="loading__logo">
+          <img src="/eyelashes-logo.png" alt="Лого" width="200">
+        </div>
+        <div class="loading__items">
+          <div class="loadingAnimation1 loading__item">
+            <img src="/eyelashes-snowflake.svg" width="18">
+          </div>
+          <div class="loadingAnimation2 loading__item">
+            <img src="/eyelashes-snowflake.svg" width="18">
+          </div>
+          <div class="loadingAnimation3 loading__item">
+            <img src="/eyelashes-snowflake.svg" width="18">
+          </div>
+        </div>
     </div>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
     <script>
-       window.onload = function() 
-       {
+      window.onload = function() 
+      {
         const loadingScreen = document.getElementById('loading-screen');
-        if (loadingScreen) 
-        {
-          loadingScreen.style.display = 'none';
-        }
-
         const app = document.getElementById('app');
-        if (app) 
+
+        if (loadingScreen && app) 
         {
-          app.style.display = 'block';
+          loadingScreen.style.opacity = '0';
+          loadingScreen.style.visibility = 'hidden';
+
+          app.style.visibility = 'visible';
+          app.style.opacity = '1';
         }
       }
-    </script>
-    <style>
-        #app { display: none; }
+</script>
+<style>
+    #app 
+    {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.5s ease;
+    }
 
-        #loading-screen 
-        {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-          font-size: 24px;
-        }
-    </style>
+    #loading-screen 
+    {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      z-index: 99999;
+      transition: opacity 0.5s ease, visibility 0.5s;
+    }
+
+    .loading__items 
+    {
+      display: flex;
+      gap: 15px;
+    }
+    .loading__item 
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: #224137;
+      animation: loadingAn 1.5s infinite ease-in-out;
+
+      img { filter: brightness(0) invert(1); }
+    }
+
+    .loadingAnimation1 
+    {
+      background-color: #224137;
+      animation-delay: 0s;
+    }
+    .loadingAnimation2 
+    {
+      background-color: #40866f;
+      animation-delay: 0.2s;
+    }
+    .loadingAnimation3 
+    {
+      background-color: #3cc79a;
+      animation-delay: 0.4s;
+    }
+    .loading__logo img 
+    {
+      position: relative;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes loadingAn 
+    {
+      0%   { opacity: .2; scale: 0.8; }
+      50%  { opacity: 1; scale: 1.2; }
+      100% { opacity: .2; scale: 0.8; }
+    }
+
+    @keyframes pulse 
+    {
+      0% { scale: 1; }
+      50% { scale: 1.03; }
+      100% { scale: 1; }
+    }
+    @media (max-width: 500px)
+    {
+      .loading__logo img  { width: 160px; }
+    }
+</style>
   </body>
 </html>
