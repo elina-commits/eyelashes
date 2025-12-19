@@ -10,7 +10,6 @@
         animationDelay: flake.delay + 's',
         width: flake.size + 'px',
         height: flake.size + 'px',
-        backgroundImage: `url('${flake.image}')`,
         opacity: flake.op
       }"
     ></div>
@@ -32,7 +31,6 @@ onMounted(() =>
       duration: Math.random() * 3 + 4,
       delay: Math.random() * 5,    
       size: Math.random() * 17 + 2,
-      image: '/eyelashes-snowflake.svg',
       op: Math.random() * 1 + 0.1,
     });
   }
