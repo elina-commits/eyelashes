@@ -110,6 +110,7 @@
 	{	
 		text-align: center;
 		flex-direction: column-reverse;
+		gap: 10px;
 	}
 
 	.banner__title-mob
@@ -118,16 +119,14 @@
 		color: #fff;
 		font-size: 33px;
 		line-height: 40px;
-		max-width: 600px;
+		max-width: 500px;
 	}
-  .banner__subTitle { max-width: 100%; }
+  	.banner__subTitle 
+  	{
+		font-size: 16px;
+		max-width: 100%; 
+	}
 	.banner__img { width: 290px; }
-}
-@media (max-width: 768px)
-{
-	.banner__wrapper { gap: 10px; }
-	.banner__title-mob { max-width: 500px; }	
-	.banner__subTitle { font-size: 16px; }
 }
 @media (max-width: 400px)
 {

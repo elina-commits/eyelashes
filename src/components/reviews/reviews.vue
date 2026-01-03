@@ -3,10 +3,10 @@
 		<div class="reviews__wrapper container">
 			<h2 class="reviews__title">Отзывы учениц</h2>	
 			<div class="reviews__items g-flex">
-				<div class="reviews__item" v-for="review in reviews">
+				<div class="reviews__item" v-for="review in object.reviews">
 					<div class="reviews__item-info g-flex">
 						<div class="reviews__item-wrap">
-							<img :src="review.img" alt="username" class="reviews__item-img">
+							<img :src="review.img" class="reviews__item-img">
 							<h3 class="reviews__item-user">{{ review.name }}</h3>
 						</div>
 						<p class="reviews__item-date">{{ review.date }}</p>
@@ -20,40 +20,8 @@
 
 <script setup>
 	import { ref } from "vue"
-	// import photoUser from '@/assets/images/eyelashes-banner.jpg';
-
-	const reviews = ref([
-		{
-			img: 'https://masterpiecer-images.s3.yandex.net/5fe3e9891064ff4:upscaled',
-			date: '28 НОЯБРЯ 2025г.',
-			name: 'Гибриды Анзор F1 ',
-			text: '«Влада, спасибо большое за такое простое, но подробное обучение! столько тонкостей! И здорово, что всегда есть возможность вернуться пересмотреть и отдельное спасибо за то как снимать и обрабатывать видео. Я в полном восторге!».'
-		},
-		{
-			img: 'https://masterpiecer-images.s3.yandex.net/5fe3e9891064ff4:upscaled',
-			date: '28 НОЯБРЯ 2025г.',
-			name: 'Гибриды Анзор F1 ',
-			text: '«Так бурно на моё лами еще не реагировали! Я нахожусь в Норвегии и я единственная, у кого есть эта техника здесь! Норвежки будут в шоке!) »'
-		},
-		{
-			img: 'https://masterpiecer-images.s3.yandex.net/5fe3e9891064ff4:upscaled',
-			date: '28 НОЯБРЯ 2025г.',
-			name: 'Гибриды Анзор F1 ',
-			text: '«Здравствуйте, Владислава! Прошла теорию по корейскому лами еще в начале июля, откладывала в долгий ящик и сегодня взяла модель. Я В ВОСТОРОГЕ! Честно, шло у меня все не очень, сложно было изолировать нижнее веко тк глаз возрастной, подклейки и все такое.. '
-		},
-		{
-			img: 'https://masterpiecer-images.s3.yandex.net/5fe3e9891064ff4:upscaled',
-			date: '28 НОЯБРЯ 2025г.',
-			name: 'Гибриды Анзор F1 ',
-			text: '«Влада, спасибо большое за такое простое, но подробное обучение! столько тонкостей! И здорово, что всегда есть возможность вернуться пересмотреть и отдельное спасибо за то как снимать и обрабатывать видео. Я в полном восторге!».'
-		},
-		{
-			img: 'https://masterpiecer-images.s3.yandex.net/5fe3e9891064ff4:upscaled',
-			date: '28 НОЯБРЯ 2025г.',
-			name: 'Гибриды Анзор F1 ',
-			text: '«Влада, спасибо большое за такое простое, но подробное обучение! столько тонкостей! И здорово, что всегда есть возможность вернуться пересмотреть и отдельное спасибо за то как снимать и обрабатывать видео. Я в полном восторге!».'
-		},
-	])
+	import { useMainDataStore } from '@/store/mainData.js'
+	const object = useMainDataStore()
 </script>
 
 <style lang="scss">
