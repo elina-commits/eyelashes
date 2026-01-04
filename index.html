@@ -9,17 +9,17 @@
   <body class="fade-in-item">
     <div id="loading-screen">
         <div class="loading__logo">
-          <img src="/eyelashes-logo.png" alt="Лого" width="200">
+          <img src="/eyelashes-logo.jpeg" alt="Лого" width="200">
         </div>
         <div class="loading__items">
           <div class="loadingAnimation1 loading__item">
-            <img src="/eyelashes-snowflake.svg" width="18">
+            <img src="/eyelashes-snowflake.svg">
           </div>
           <div class="loadingAnimation2 loading__item">
-            <img src="/eyelashes-snowflake.svg" width="18">
+            <img src="/eyelashes-snowflake.svg">
           </div>
           <div class="loadingAnimation3 loading__item">
-            <img src="/eyelashes-snowflake.svg" width="18">
+            <img src="/eyelashes-snowflake.svg">
           </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
           app.style.visibility = 'visible';
           app.style.opacity = '1';
         }
-      }
+      // }
 </script>
 <style>
     #app 
@@ -60,9 +60,8 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
-      z-index: 99999;
-      transition: opacity 0.5s ease, visibility 0.5s;
+      gap: 25px;
+      z-index: 9999;
     }
 
     .loading__items 
@@ -75,13 +74,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 28px;
-      height: 28px;
+      width: 25px;
+      height: 25px;
       border-radius: 50%;
       background-color: #224137;
       animation: loadingAn 1.5s infinite ease-in-out;
 
-      img { filter: brightness(0) invert(1); }
+    }
+    .loading__item img
+    {
+      width: 18px;
+      filter: brightness(0) invert(1);
     }
 
     .loadingAnimation1 
@@ -104,22 +107,33 @@
       position: relative;
       animation: pulse 2s infinite ease-in-out;
     }
+  
     @keyframes loadingAn 
     {
-      0%   { opacity: .2; scale: 0.8; }
+      0%   { opacity: 0.5; scale: 0.8; }
       50%  { opacity: 1; scale: 1.2; }
-      100% { opacity: .2; scale: 0.8; }
+      100% { opacity: 0.5; scale: 0.8; }
     }
 
     @keyframes pulse 
     {
       0% { scale: 1; }
-      50% { scale: 1.03; }
+      50% { scale: 1.05; }
       100% { scale: 1; }
     }
     @media (max-width: 500px)
     {
-      .loading__logo img  { width: 160px; }
+      #loading-screen  { gap: 10px; }
+
+      .loading__logo img  { width: 100px; }
+
+      .loading__items { gap: 10px; }
+      .loading__item
+      {
+        width: 14px;
+        height: 14px;
+      }
+      .loading__item img { width: 9px;  }
     }
 </style>
   </body>

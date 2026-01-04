@@ -101,7 +101,7 @@
 	.mainHeader__item { font-size: 19px; }
 	.mainHeader__wrap { gap: 10px; }
 }
-@media( max-width: 1024px)
+@media( max-width: 768px)
 {
 	.mainHeader__wrap, .mainHeader__items { display: none; }
 
